@@ -1,0 +1,51 @@
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text h1,
+.text  {
+  margin: 0;
+  line-height: 1;
+  
+}
+
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.image img {
+  width: 300px;
+  box-shadow: #9C9C9C 1px 1px 1px 1px;
+  border-radius: 20%; 
+}
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color:#9C9C9C;
+  background-color: #1B1B1B
+
+  
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  gap:80px;
+  justify-content: center;
+}
+
+.skills-list li {
+  font-weight: 500;
+  font-size: 20px;
+}
