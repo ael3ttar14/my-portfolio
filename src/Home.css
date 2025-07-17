@@ -12,6 +12,7 @@
 .text  {
   margin: 0;
   line-height: 1;
+  cursor:default;
   
 }
 
@@ -33,9 +34,15 @@
   display: flex;
   justify-content: center;
   color:#9C9C9C;
-  background-color: #1B1B1B
-
+  background-color: #1B1B1B;
   
+  
+}
+.skills-list :hover {
+  color: #ffffff;
+  cursor:grab;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 
 .skills-list {

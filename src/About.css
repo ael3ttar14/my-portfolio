@@ -1,0 +1,33 @@
+.about-container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 10px solid #aaa;
+  border-radius: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.about-button.yes {
+  margin-right: 100px;
+}
+
+.about-response {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.no-btn {
+  position: absolute;
+  transition: top 0.4s ease, left 0.4s ease;
+}
