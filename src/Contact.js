@@ -13,17 +13,6 @@ export default function Contact() {
           <p>🔗 LinkedIn:<a href="https://www.linkedin.com/in/ahmad-elattar-031350374/">Ahmad Elattar</a></p>
           <p>📍 Address: Egypt, Benha</p>
         </div>
-        <div className="form">
-          <div className="form-left">
-            <input type="text" placeholder="Your Name *" />
-            <input type="email" placeholder="Your Email *" />
-            <input type="text" placeholder="Your Phone *" />
-          </div>
-          <div className="form-right">
-            <textarea placeholder="Your Message *"></textarea>
-          </div>
-        </div>
-        <button className="btn">SEND MESSAGE</button>
         <p className="thank">Thank you for visiting my profile!</p>
       </div>
     </div>

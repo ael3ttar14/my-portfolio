@@ -34,7 +34,6 @@
   to { transform: rotate(360deg); }
 }
 
-/* Responsive for very small screens */
 @media (max-width: 480px) {
   .App-header {
     font-size: 14px;

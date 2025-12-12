@@ -30,14 +30,14 @@ function About() {
     <div>
       <Header />
       <div ref={containerRef} className="about-container">
-        <h2>Do You Love Me?</h2>
+        <h2>Did you like my portfolio?</h2>
         <button onClick={() => setAnswer("yes")} className="about-button yes">
           Yes
         </button>
         <button ref={noButtonRef} onMouseEnter={moveNoButton} className="about-button no-btn">
           No
         </button>
-        {answer === "yes" && <div className="about-response">me too ❤️</div>}
+        {answer === "yes" && <div className="about-response">You're welcome!❤️</div>}
       </div>
     </div>
   );

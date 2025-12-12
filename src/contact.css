@@ -22,7 +22,7 @@ body {
 .contact-info p {
   font-size: 1.5vw;
   max-font-size: 20px;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .contact-info a {
@@ -31,52 +31,6 @@ body {
   word-break: break-all;
 }
 
-.form {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.form-left, .form-right {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form input, .form textarea {
-  padding: 15px;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  background-color: #fff;
-  color: #000;
-  box-sizing: border-box;
-}
-
-.form-right textarea {
-  height: 200px;
-  resize: none;
-}
-
-.btn {
-  background-color: blue;
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #e74c3c;
-}
 
 .thank {
   margin-top: 10px;
@@ -84,21 +38,4 @@ body {
   opacity: 0.6;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .form {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .form-left, .form-right {
-    min-width: 100%;
-  }
-  .form-right textarea {
-    height: 150px;
-  }
-  .btn {
-    width: 100%;
-    font-size: 14px;
-    padding: 10px;
-  }
-}
+ 
