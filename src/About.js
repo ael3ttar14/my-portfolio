@@ -18,10 +18,9 @@ function About() {
       const maxX = contRect.width - btnRect.width;
       const maxY = contRect.height - btnRect.height;
 
-      const randomX = Math.floor(Math.random() * maxX);
-      const randomY = Math.floor(Math.random() * maxY);
+      const randomX = Math.random() * maxX;
+      const randomY = Math.random() * maxY;
 
-      // لا تعدل الـ position هنا لأننا أضفناها في CSS
       button.style.left = `${randomX}px`;
       button.style.top = `${randomY}px`;
     }
@@ -31,26 +30,14 @@ function About() {
     <div>
       <Header />
       <div ref={containerRef} className="about-container">
-        <h2 style={{ fontSize: "50px" }}>Do You Love Me?</h2>
-
-        <button
-          onClick={() => setAnswer("yes")}
-          className="about-button yes"
-        >
+        <h2>Do You Love Me?</h2>
+        <button onClick={() => setAnswer("yes")} className="about-button yes">
           Yes
         </button>
-
-        <button
-          ref={noButtonRef}
-          onMouseEnter={moveNoButton}
-          className="about-button no-btn"
-        >
+        <button ref={noButtonRef} onMouseEnter={moveNoButton} className="about-button no-btn">
           No
         </button>
-
-        {answer === "yes" && (
-          <div className="about-response">me too ❤️</div>
-        )}
+        {answer === "yes" && <div className="about-response">me too ❤️</div>}
       </div>
     </div>
   );

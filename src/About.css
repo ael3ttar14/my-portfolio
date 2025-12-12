@@ -1,33 +1,52 @@
 .about-container {
   position: relative;
-  width: 500px;
-  height: 300px;
-  margin: 100px auto;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
   padding: 20px;
-  border: 10px solid #aaa;
-  border-radius: 100px;
+  border: 5px solid #aaa;
+  border-radius: 50px;
   text-align: center;
   overflow: hidden;
 }
 
+.about-container h2 {
+  font-size: 3vw;
+  max-font-size: 50px;
+}
+
 .about-button {
-  padding: 10px 20px;
+  padding: 10px 15px;
+  font-size: 2vw;
+  max-font-size: 25px;
   cursor: pointer;
   margin-top: 10px;
-  font-size: 25px;
 }
 
 .about-button.yes {
-  margin-right: 100px;
-}
-
-.about-response {
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 50px;
+  margin-right: 0;
+  margin-bottom: 10px;
 }
 
 .no-btn {
   position: absolute;
   transition: top 0.4s ease, left 0.4s ease;
+}
+
+.about-response {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 3vw;
+  max-font-size: 50px;
+}
+
+/* Responsive smaller devices */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 15px;
+    border-width: 3px;
+  }
+  .about-button {
+    padding: 8px 12px;
+  }
 }

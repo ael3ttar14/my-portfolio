@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 25vmin;
+  max-height: 150px;
   pointer-events: none;
 }
 
@@ -29,10 +30,13 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive for very small screens */
+@media (max-width: 480px) {
+  .App-header {
+    font-size: 14px;
   }
 }

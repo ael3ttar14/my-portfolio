@@ -1,32 +1,33 @@
 import './Home.css';
 import photo from './photo/1.png'; 
 import Header from './components/Header';
+
 export default function Home() {
   return (
     <div>
       <Header />
-    <div className="home">
-      <div className="text">
-        <h1 style={{fontSize:"50px"}}> Hello </h1>
-        <h2 style={{fontSize:"40px"}}> I'm Ahmad </h2>
-        <h2 style={{fontSize:"70px"}}>Software developer.</h2>
+      <div className="home">
+        <div className="text">
+          <h2>Hello</h2>
+          <h2>I'm Ahmad Elattar</h2>
+          <h1>Software Developer.</h1>
+        </div>
+        <div className="image">
+          <img src={photo} alt="Profile" className="profile-img" />
+        </div>
       </div>
-      <div className="image">
-        <img src={photo} alt="Profile" className="profile-img" />
-      </div>
-    </div>
       <div className='skills'>
         <ul className='skills-list'>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li> 
-        <li>bootstrap</li> 
-        <li>TypeScript</li> 
-        <li>React</li>
-        <li>Node.js</li>
-        <li>git</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li> 
+          <li>Bootstrap</li> 
+          <li>TypeScript</li> 
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Git</li>
         </ul>
-    </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-/* خلفية الصفحة ونصوص */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -8,40 +7,40 @@ body {
 
 .contact {
   max-width: 1000px;
+  width: 90%;
   margin: 0 auto;
-  padding: 2px 2px;
+  padding: 20px;
   text-align: center;
 }
 
 .contact h1 {
-  font-size: 70px;
+  font-size: 7vw;
+  max-font-size: 70px;
   margin-bottom: 10px;
-  color: white;
-}
-
-.contact-info {
-  margin-bottom: 20px;
 }
 
 .contact-info p {
+  font-size: 1.5vw;
+  max-font-size: 20px;
   margin: 5px 0;
-  font-size: 20px;
 }
 
 .contact-info a {
   color: #e74c3c;
   text-decoration: none;
+  word-break: break-all;
 }
+
 .form {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  text-align: left ;
+  text-align: left;
 }
-.form-left,
-.form-right {
+
+.form-left, .form-right {
   flex: 1;
   min-width: 280px;
   display: flex;
@@ -49,15 +48,14 @@ body {
   gap: 20px;
 }
 
-.form input,
-.form textarea {
-  padding: 17px 17px;
+.form input, .form textarea {
+  padding: 15px;
   border: none;
   border-radius: 3px;
   font-size: 16px;
-  box-sizing: border-box;
   background-color: #fff;
   color: #000;
+  box-sizing: border-box;
 }
 
 .form-right textarea {
@@ -66,7 +64,7 @@ body {
 }
 
 .btn {
-  background-color: BLUE;
+  background-color: blue;
   color: white;
   padding: 12px 30px;
   border: none;
@@ -84,4 +82,23 @@ body {
   margin-top: 10px;
   font-style: italic;
   opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form-left, .form-right {
+    min-width: 100%;
+  }
+  .form-right textarea {
+    height: 150px;
+  }
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
 }
