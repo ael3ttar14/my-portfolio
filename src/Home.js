@@ -21,6 +21,7 @@ export default function Home() {
         <li>CSS</li>
         <li>JavaScript</li> 
         <li>bootstrap</li> 
+        <li>TypeScript</li> 
         <li>React</li>
         <li>Node.js</li>
         <li>git</li>
