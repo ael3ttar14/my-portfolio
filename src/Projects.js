@@ -1,0 +1,83 @@
+import Header from "./components/Header";
+import "./Projects.css";
+import { useEffect } from "react";
+
+import project1 from "./projects/project1.png";
+import project2 from "./projects/project2.png";
+import project3 from "./projects/project3.png";
+
+const projectsData = [
+  {
+    title: "Portfolio Website",
+    description: "Personal portfolio built with React and responsive design.",
+    image: project1,
+    live: "https://my-portfolio-five-gamma-68.vercel.app/",
+    github: "https://github.com/ael3ttar14/my-portfolio",
+  },
+  {
+    title: "React Auth App",
+    description: "Login & Register using React, JSON Server & LocalStorage.",
+    image: project2,
+    live: "#",
+    github: "https://github.com/ael3ttar14/project-",
+  },
+  {
+    title: "Find-Me",
+    description: "A React app that matches faces in photos, connecting people across different ages. Uses image recognition to identify and link similar faces.",
+    image: project3,
+    live: "#",
+    github: "https://github.com/ael3ttar14/find-me",
+  },
+];
+
+export default function Projects() {
+  useEffect(() => {
+    const cards = document.querySelectorAll(".project-card");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible"); 
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    cards.forEach((card) => {
+      observer.observe(card);
+    });
+  }, []);
+
+  return (
+    <div>
+      <Header />
+      <div className="projects-section">
+        <h1>Projects</h1>
+
+        <div className="projects-grid">
+          {projectsData.map((project, index) => (
+            <div className="project-card fade-in" key={index}>
+              <img src={project.image} alt={project.title} />
+
+              <div className="project-overlay">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                {project.live && project.live !== "#" && (
+                  <a href={project.live} target="_blank" rel="noreferrer">
+                    Live Demo
+                  </a>
+                )}
+                <a href={project.github} target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

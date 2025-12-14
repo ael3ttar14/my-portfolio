@@ -1,21 +1,59 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import './Header.css';
+import { Link, useLocation } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import "./Header.css";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   return (
-    <header>
+    <header className="header">
       <nav className="nav">
         <p className="logo">Ahmad Elattar</p>
+
         <div className="hamburger" onClick={() => setOpen(!open)}>
           &#9776;
         </div>
+
         <ul className={`nav-links ${open ? "open" : ""}`}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li>
+            <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              className={location.pathname === "/projects" ? "active" : ""}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className={location.pathname === "/contact" ? "active" : ""}
+            >
+              Contact
+            </Link>
+          </li>
+
+          <li className="social-links">
+            <a href="https://github.com/ael3ttar14" target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ahmad-elattar-031350374/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a href="https://wa.me/201069199985" target="_blank" rel="noreferrer">
+              <FaWhatsapp />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
