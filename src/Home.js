@@ -9,7 +9,6 @@ export default function Home() {
     { name: "JavaScript", icon: <FaJsSquare color="#F0DB4F" /> },
     { name: "TypeScript", icon: <FaJsSquare color="#3178C6" /> },
     { name: "React", icon: <FaReact color="#61DBFB" /> },
-    { name: "JS", icon: <FaJsSquare color="#F0DB4F" /> },
     { name: "Tailwind", icon: <FaCss3Alt color="#38B2AC" /> },
     { name: "CSS", icon: <FaCss3Alt color="#264DE4" /> },
     { name: "Bootstrap", icon: <FaBootstrap color="#563D7C" /> },
