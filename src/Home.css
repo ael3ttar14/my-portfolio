@@ -1,7 +1,7 @@
 .home {
   min-height: calc(100vh - 70px);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 90%;
   max-width: 1200px;
@@ -76,6 +76,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-top: 6%;
 }
 
 .home-image img {
@@ -132,9 +133,18 @@
     text-align: center;
   }
 
+  .home-image {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .home-image img {
+    margin: 0 auto;
+  }
+
   .home-text p {
     margin: 0 auto;
-    
   }
 
   .home-buttons {
@@ -145,3 +155,4 @@
     justify-content: center;
   }
 }
+

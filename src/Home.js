@@ -3,6 +3,8 @@ import photo from "./photo/1.png";
 import Header from "./components/Header";
 import {  FaCss3Alt, FaJsSquare, FaBootstrap, FaReact, FaNodeJs } from "react-icons/fa";
 import { useEffect } from "react";
+import { Typewriter } from "react-simple-typewriter";
+
 
 export default function Home() {
   const skills = [
@@ -43,7 +45,21 @@ export default function Home() {
           <h1>
             I'm <span>Ahmad Elattar</span>
           </h1>
-          <h3>Software Developer (React)</h3>
+          <h3 className="typing">
+  <Typewriter
+    words={[
+      "full-Stack Developer",
+      "Front-End Developer (React.js)",
+      "Back-End Developer (Node.js)",
+    ]}
+    loop={0}
+    cursor
+    cursorStyle="|"
+    typeSpeed={80}
+    deleteSpeed={50}
+    delaySpeed={1500}
+  />
+</h3>
 
           <p>
            Software Developer focused on Front-End development using React.js. Experienced in building responsive and user-friendly web applications with clean design and good performance. Skilled in writing maintainable code and delivering high-quality solutions.
