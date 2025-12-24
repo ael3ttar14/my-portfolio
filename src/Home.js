@@ -58,6 +58,7 @@ export default function Home() {
     typeSpeed={80}
     deleteSpeed={50}
     delaySpeed={1500}
+
   />
 </h3>
 

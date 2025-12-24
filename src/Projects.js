@@ -5,14 +5,15 @@ import { useEffect } from "react";
 import project1 from "./projects/project1.png";
 import project2 from "./projects/project2.png";
 import project3 from "./projects/project3.png";
+import project4 from "./projects/project4.png";
 
 const projectsData = [
   {
-    title: "Portfolio Website",
-    description: "Personal portfolio built with React and responsive design.",
-    image: project1,
-    live: "https://my-portfolio-five-gamma-68.vercel.app/",
-    github: "https://github.com/ael3ttar14/my-portfolio",
+    title: "CRUD App with javaScript",
+    description: "A simple and responsive CRUD app made with HTML, CSS, and JavaScript, featuring animated backgrounds and smooth interactions.",
+    image: project4,
+    live: "https://cruds-teal-ten.vercel.app/",
+    github: "https://github.com/ael3ttar14/CRUDS",
   },
   {
     title: "React Auth App",
@@ -28,6 +29,13 @@ const projectsData = [
     live: "#",
     github: "https://github.com/ael3ttar14/find-me",
   },
+   {
+    title: "Portfolio Website",
+    description: "Personal portfolio built with React and responsive design.",
+    image: project1,
+    live: "https://my-portfolio-five-gamma-68.vercel.app/",
+    github: "https://github.com/ael3ttar14/my-portfolio",
+  }
 ];
 
 export default function Projects() {
