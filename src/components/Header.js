@@ -40,11 +40,11 @@ export default function Header() {
           </li>
 
           <li className="social-links">
-            <a href="https://github.com/ael3ttar14" target="_blank" rel="noreferrer">
+            <a href="https://github.com/ahmadhamdy14" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/ahmad-elattar-031350374/"
+              href="https://www.linkedin.com/in/ahmad-hamdy-031350374/"
               target="_blank"
               rel="noreferrer"
             >

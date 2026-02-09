@@ -43,7 +43,7 @@ export default function Home() {
         <div className="home-text">
           <h2>Hello 👋</h2>
           <h1>
-            I'm <span>Ahmad Elattar</span>
+            I'm <span>Ahmad Hamdy </span>
           </h1>
           <h3 className="typing">
   <Typewriter
@@ -51,6 +51,8 @@ export default function Home() {
       "full-Stack Developer",
       "Front-End Developer (React.js)",
       "Back-End Developer (Node.js)",
+      "Software Tester (Manual & Basic Automation)"
+
     ]}
     loop={0}
     cursor
