@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <p className="logo">Ahmad Elattar</p>
+        <p className="logo">Ahmad Hamdy</p>
 
         <div className="hamburger" onClick={() => setOpen(!open)}>
           &#9776;
