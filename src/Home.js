@@ -51,7 +51,6 @@ export default function Home() {
       "full-Stack Developer",
       "Front-End Developer (React.js)",
       "Back-End Developer (Node.js)",
-      "Software Tester (Manual & Basic Automation)"
 
     ]}
     loop={0}
