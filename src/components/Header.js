@@ -10,7 +10,12 @@ export default function Header() {
 
 useEffect(() => {
   const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
+
+  if (savedTheme === "light") {
+    document.documentElement.classList.remove("dark");
+    setDark(false);
+  } else {
+    // Dark هو الافتراضي
     document.documentElement.classList.add("dark");
     setDark(true);
   }
@@ -31,7 +36,7 @@ const toggleTheme = () => {
       <nav className="nav">
         <p className="logo">Ahmad Hamdy</p>
           <button onClick={toggleTheme} className="theme-toggle">
-            {dark ? "☀" : "🌙"}
+            {dark ? "◐" : "◑" }
           </button>
         <div className="hamburger" onClick={() => setOpen(!open)}>
           &#9776;
