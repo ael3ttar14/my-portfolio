@@ -11,7 +11,7 @@
 .home-text {
   flex: 1;
 }
-
+/* Titles */
 .home-text h2 {
   color: #e74c3c;
   margin-bottom: 10px;
@@ -26,18 +26,29 @@
   color: #e74c3c;
 }
 
+/* Subtitle */
 .home-text h3 {
   font-size: 20px;
-  color: #9c9c9c;
+  color: #555; /* Light */
   margin-bottom: 20px;
 }
 
+.dark .home-text h3 {
+  color: #9c9c9c; /* Dark */
+}
+
+/* Paragraph */
 .home-text p {
   line-height: 1.7;
-  color: #ccc;
+  color: #444; /* Light */
   max-width: 500px;
 }
 
+.dark .home-text p {
+  color: #ccc; /* Dark */
+}
+
+/* Buttons */
 .home-buttons {
   margin-top: 25px;
   display: flex;
@@ -72,6 +83,7 @@
   color: #fff;
 }
 
+/* Image */
 .home-image {
   flex: 1;
   display: flex;
@@ -82,9 +94,17 @@
 .home-image img {
   width: 280px;
   border-radius: 20%;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Light */
+  transition: 0.3s;
 }
 
+.dark .home-image img {
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4); /* Dark */
+}
+
+
+
+/* Skills Section */
 .skills-section {
   display: flex;
   flex-wrap: wrap;
@@ -99,16 +119,23 @@
   align-items: center;
   width: 80px;
   padding: 10px;
-  background: #1b1b1b;
+  background: #f2f2f2; /* Light */
+  color: #111;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.dark .skill-card {
+  background: #1b1b1b; /* Dark */
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
 .skill-card:hover {
   transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 0 15px rgba(231,76,60,0.4);
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
 }
 
 .skill-icon {
@@ -116,6 +143,7 @@
   margin-bottom: 5px;
 }
 
+/* Fade Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(50px);
@@ -127,6 +155,7 @@
   transform: translateY(0);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .home {
     flex-direction: column-reverse;
@@ -155,4 +184,3 @@
     justify-content: center;
   }
 }
-

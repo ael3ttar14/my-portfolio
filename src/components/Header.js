@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import "./Header.css";
@@ -6,16 +6,36 @@ import "./Header.css";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const [dark, setDark] = useState(false);
 
+useEffect(() => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.documentElement.classList.add("dark");
+    setDark(true);
+  }
+}, []);
+
+const toggleTheme = () => {
+  if (dark) {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
+  setDark(!dark);
+};
   return (
     <header className="header">
       <nav className="nav">
         <p className="logo">Ahmad Hamdy</p>
-
+          <button onClick={toggleTheme} className="theme-toggle">
+            {dark ? "☀" : "🌙"}
+          </button>
         <div className="hamburger" onClick={() => setOpen(!open)}>
           &#9776;
         </div>
-
         <ul className={`nav-links ${open ? "open" : ""}`}>
           <li>
             <Link to="/" className={location.pathname === "/" ? "active" : ""}>
