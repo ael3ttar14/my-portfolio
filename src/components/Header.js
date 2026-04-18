@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaFilePdf , FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import "./Header.css";
 
 export default function Header() {
@@ -35,7 +35,7 @@ const toggleTheme = () => {
     <header className="header">
       <nav className="nav">
         <p className="logo">Ahmad Hamdy</p>
-          <button onClick={toggleTheme} className="theme-toggle">
+          <button onClick={toggleTheme} className="theme-toggle" title="Toggle Theme">
             {dark ? "◐" : "◑" }
           </button>
         <div className="hamburger" onClick={() => setOpen(!open)}>
@@ -63,19 +63,30 @@ const toggleTheme = () => {
               Contact
             </Link>
           </li>
-
           <li className="social-links">
-            <a href="https://github.com/ahmadhamdy14" target="_blank" rel="noreferrer">
+            <a href="/cv.pdf" download  
+              title="Download CV" 
+              className="cv-btn">
+               <FaFilePdf/> 
+            </a>
+            <a href="https://github.com/ahmadhamdy14"
+              target="_blank" 
+              rel="noreferrer" 
+              title="github">
               <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/ahmad-hamdy-031350374/"
               target="_blank"
               rel="noreferrer"
+              title="linkedin"
             >
               <FaLinkedin />
             </a>
-            <a href="https://wa.me/201069199985" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/201069199985" 
+            target="_blank" 
+            rel="noreferrer" 
+            title="whatsapp">
               <FaWhatsapp />
             </a>
           </li>

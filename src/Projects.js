@@ -7,8 +7,16 @@ import project2 from "./projects/project2.png";
 import project3 from "./projects/project3.png";
 import project4 from "./projects/project4.png";
 import project5 from "./projects/project5.png";
+import project6 from "./projects/project6.png";
 
 const projectsData = [
+  {
+    title: "E-Commerce App (React & Firebase)",
+    description: "A modern e-commerce app with authentication, protected routes, and role-based access (admin & user), featuring product management, shopping cart, and responsive UI.",
+    image: project6,
+    live: "https://attar-hub.vercel.app/",
+    github: "https://github.com/ahmadhamdy14/Attar-Hub",
+  },
   {
     title: "CRUD App with javaScript",
     description: "A simple and responsive CRUD app made with HTML, CSS, and JavaScript, featuring animated backgrounds and smooth interactions.",
