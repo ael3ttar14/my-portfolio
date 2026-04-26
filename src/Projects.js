@@ -14,7 +14,7 @@ const projectsData = [
     title: "E-Commerce App (React & Firebase)",
     description: "A modern e-commerce app with authentication, protected routes, and role-based access (admin & user), featuring product management, shopping cart, and responsive UI.",
     image: project6,
-    live: "https://attar-hub.vercel.app/",
+    live: "https://attar-hub.vercel.app/login",
     github: "https://github.com/ahmadhamdy14/Attar-Hub",
   },
   {
